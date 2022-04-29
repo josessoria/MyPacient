@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/f28a1bca3b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/inscripcion.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="todo">
+        <div class="volver">
+            <a href="/pages/main.html">
+                <i class="fa-solid fa-chevron-left"></i>
+            </a>
+        </div>
+        <div id="tarjetas">
+            <div id="plantilla">
+                <form action="" id="transactionForm">
+                    <h1>Inscripcion paciente</h1>
+                    <input type="text" id="transactionName" name="transactionName"
+                        placeholder="Ingresar Nombre del paciente">
+                    <input type="text" id="transactionLastname" name="transactionLastname"
+                        placeholder="Ingresar Apellido del paciente">
+                    <input type="text" id="transactionDocument" name="transactionDocument"
+                        placeholder="Ingresar documento del paciente">
+                    <select name="transactionSocial" id="transactionSocial">
+                        <option disabled selected>Obra social</option>
+                        <option value="no tiene">no tengo</option>
+                        <option value="cuidAR">cuidAR</option>
+                        <option value="MiVida">MiVida</option>
+                        <option value="MySalud">MySalud</option>
+                        <option value="otra">otra</option>
+                    </select>
+                    <div class="botonera">
+                        <button type="submit" id="boton" type="reset">Inscribir</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="/scripts/inscripcion.js"></script>
+</body>
+
+</html>

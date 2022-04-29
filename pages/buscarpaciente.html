@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f28a1bca3b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="/styles/buscapaciente.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="todo">
+      <div class="volver">
+        <a href="/pages/main.html">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+      </div>
+      <div id="tarjetas">
+        <div class="dentrotodo">
+          <div id="plantilla">
+            <form action="" id="formulario">
+              <h1>Buscar paciente</h1>
+              <input
+                type="text"
+                id="documentofind"
+                placeholder="Ingresar documento"
+              />
+              <div class="botonera">
+                <button id="buscar" type="reset">buscar</button>
+              </div>
+              <h2 id="h22"></h2>
+            </form>
+          </div>
+          <div id="tablas">
+            <table class="table" id="busquedaTable">
+              <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Documento</th>
+                <th>Obra social</th>
+                <th>Direccion</th>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/scripts/buscarpacientes.js"></script>
+  </body>
+</html>
